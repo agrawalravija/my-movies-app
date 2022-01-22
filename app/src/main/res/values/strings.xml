@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">MyMovies</string>
+    <string name="error_fetch_movies">Please check your internet connection</string>
+    <string name="top_rated">Top Rated</string>
+    <string name="highest_rated_movies">Highest rated movies of all time</string>
+    <string name="content_desc_movie_poster">TODO</string>
+    <string name="favorite_movies">Favorite</string>
+    <string name="my_list">My List</string>
+</resources>

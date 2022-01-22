@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.FavoriteFragment">
+
+    <TextView
+        android:id="@+id/tv_top_rated"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/my_list"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/favorite_movies"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipToPadding="false"
+        android:columnWidth="@dimen/grid_column_width"
+        android:paddingTop="@dimen/margin_minimum"
+        android:paddingLeft="@dimen/margin_minimum"
+        android:paddingRight="@dimen/margin_minimum"
+        android:paddingBottom="@dimen/margin_huge"
+        tools:listitem="@layout/item_movie"
+        android:layout_below="@id/tv_top_rated"/>
+
+    <ProgressBar
+        android:id="@+id/pb_fragment_movie_list"
+        android:layout_width="@dimen/small_progress_bar_size"
+        android:layout_height="@dimen/small_progress_bar_size"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/margin_semi_medium"
+        android:visibility="gone"/>
+
+</RelativeLayout>

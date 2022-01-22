@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_toprated"
+    app:startDestination="@id/topRatedMoviesFragment"
+    tools:ignore="UnusedNavigation">
+
+    <fragment
+        android:id="@+id/topRatedMoviesFragment"
+        android:name="com.example.mymovies.view.TopRatedMoviesFragment"
+        android:label="TopRatedMoviesFragment"
+        tools:layout="@layout/top_rated_movies_fragment">
+        <action
+            android:id="@+id/action_topRatedMoviesFragment_to_movieDetailsActivity"
+            app:destination="@id/movieDetailsActivity" />
+    </fragment>
+    <activity
+        android:id="@+id/movieDetailsActivity"
+        android:name="com.example.mymovies.view.MovieDetailsActivity"
+        android:label="MovieDetailsActivity" />
+</navigation>

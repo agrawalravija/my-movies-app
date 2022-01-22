@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin_small">4dp</dimen>
+    <dimen name="margin_minimum">5dp</dimen>
+    <dimen name="margin_huge">64dp</dimen>
+    <dimen name="margin_semi_medium">12dp</dimen>
+    <dimen name="grid_column_width">160dp</dimen>
+    <dimen name="small_progress_bar_size">40dp</dimen>
+</resources>
